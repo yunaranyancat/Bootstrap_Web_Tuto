@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CSS: Animation - 2D Transfrom Basics</title>
+
+<style>
+
+  div {
+    display: inline-block;
+  }
+
+  img {
+    width:200px;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    transition: all 0.5s;
+  }
+
+  img:hover {
+    transform: translate3D(50px,50px,100px);
+  }
+
+  .ball {
+    transition-timing-function: linear;
+  }
+</style>
+
+</head>
+
+<body>
+
+  <div class="ball">
+    <h1>It's a ball!</h2>
+    <img src="ball.jpg">
+  </div>
+  <div class="ball">
+    <h1>It's a ball!</h2>
+    <img src="ball.jpg">
+  </div>
+  <div class="ball">
+    <h1>It's a ball!</h2>
+    <img src="ball.jpg">
+  </div>
+
+</body>
+</html>
