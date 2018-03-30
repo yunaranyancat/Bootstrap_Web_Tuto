@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CSS: Animation - Transition Options</title>
+
+<style>
+
+  .box{
+    background: lightblue;
+    padding:1rem;
+    margin: 4rem;
+    text-align: center;
+    border-radius: 0.25rem;
+    color:#fff;
+    border-color: #333;
+    width:100px;
+    transition: all 3s;
+  }
+
+  #linear {
+    transition-timing-function: linear;
+  }
+
+  #ease {
+    transition-timing-function: ease;
+  }
+
+  #ease-in {
+    transition-timing-function: ease-in;
+  }
+
+  #ease-out {
+    transition-timing-function: ease-out;
+  }
+
+  #ease-in-out {
+    transition-timing-function: ease-in-out;
+  }
+
+  #cubic-bezier {
+    transition-timing-function: cubic-bezier(0.5,0.3,0.8,1);
+  }
+
+  .box:hover{
+    background: orange;
+    transform: translate(900px,0);
+  }
+
+</style>
+</head>
+
+<body>
+
+<div class="box" id="linear">LINEAR</div>
+<div class="box" id="ease">EASE</div>
+<div class="box" id="ease-in">EASE IN</div>
+<div class="box" id="ease-out">EASE OUT</div>
+<div class="box" id="ease-in-out">EASE IN OUT</div>
+<div class="box" id="cubic-bezier">CUBIC BEZIER</div>
+</body>
+</html>
