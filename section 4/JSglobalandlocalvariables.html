@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+  <head>
+    <title>JS Global and Local Variables</title>
+    <script>
+      //GLOBAL VARIABLES
+      /*var iloveTennis = "Roger Federer"
+
+      function printTennis(){
+        document.write(iloveTennis+" is a tennis Champ! - INSIDE <br/>");
+      }
+
+      printTennis();
+      document.write(iloveTennis+" is a tennis Champ! - OUTSIDE <br/>");*/
+
+      //LOCAL VARIABLES
+      function printTennis(){
+        var iloveTennis = "Roger Federer"
+        document.write(iloveTennis+" is a tennis Champ! - INSIDE <br/>");
+      }
+      
+      printTennis();
+      //WILL NOT BE EXECUTED
+      document.write(iloveTennis+" is a tennis Champ! - OUTSIDE <br/>");
+    </script>
+  </head>
+
+  <body>
+  </body>
+</html>
