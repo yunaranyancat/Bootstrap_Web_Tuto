@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+  <head>
+    <title>JQuery - Adding JQuery to your pages</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script>
+      $(document).ready(function(){
+        $("button").click(function(){
+          $("p").hide();
+          $(".heading1").hide();
+          $("#heading2").hide();
+
+        })
+
+    })
+    </script>
+  </head>
+
+  <body>
+    <div>
+      <h1 class="heading1">Currently using JQuery</h1>
+      <h2 id="heading2">JQuery is Cool</h2>
+      <p>Lorem ipsum dolor sit amet,
+        sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+      <p>Lorem ipsum dolor sit amet,
+        sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+      <button>Hide Paragraphes and Headings</button>
+    </div>
+  </body>
+</html>

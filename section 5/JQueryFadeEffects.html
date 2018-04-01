@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+  <head>
+    <title>JQuery - Fade Effects</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <style>
+
+      .box1{
+        display: none;
+        height: 100px;
+        width: 100px;
+        margin: 20px;
+        background: blue;
+      }
+
+      .box2{
+        display: none;
+        height: 100px;
+        width: 100px;
+        background: red;
+        margin: 20px;
+      }
+
+      .box3{
+        display: none;
+        height: 100px;
+        width: 100px;
+        margin: 20px;
+        background: green;
+      }
+    </style>
+    <script>
+      $(document).ready(function(){
+        $("button").click(function(){
+          $(".box1").fadeIn();
+          $(".box2").fadeIn("slow");
+          $(".box3").fadeIn("9000");
+
+          //$(selector).fadeIn(speed,callback);
+        })
+      });
+    </script>
+  </head>
+
+  <body>
+    <button>Click To View The Fade In Effects</button>
+    <p>FADE IN EFFECTS</p>
+    <div class="box1"></div>
+
+    <div class="box2"></div>
+
+    <div class="box3"></div>
+  </body>
+</html>
