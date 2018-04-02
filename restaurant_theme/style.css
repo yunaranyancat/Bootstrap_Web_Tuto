@@ -1,0 +1,37 @@
+h1, h2, h3, h4 {
+  font-family: 'Pacifico', cursive;
+  color:#bb9f05;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+}
+.bg-main {
+  background: url('bg.jpg');
+  background-size: cover;
+}
+
+.navbar{
+  padding-top: 1.5rem;
+}
+
+.bg-faded {
+  background-color: transparent;
+}
+
+.nav-link{
+  color:white!important;
+  padding-right:2rem!important;
+}
+
+.contact-primary-button{
+  color: #fff;
+  background-color: transparent;
+  border: 2px solid #bb9f05;
+  margin-left: 15px;
+}
+
+.contact-primary-button:hover {
+  background:  #bb9f05;
+  border: 2px solid #bb9f05;
+}
